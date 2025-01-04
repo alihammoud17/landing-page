@@ -85,8 +85,8 @@ export const Testimonials = () => {
         
         <div className="flex justify-center gap-6">
           <TestimonalColumn column={firstColumn} />
-          <TestimonalColumn column={secondColumn} className="hidden md:block" />
-          <TestimonalColumn column={thirdColumn} className="hidden lg:block" />
+          <TestimonalColumn column={secondColumn} className="hidden md:flex" />
+          <TestimonalColumn column={thirdColumn} className="hidden lg:flex" />
         </div>
 
       </div>
