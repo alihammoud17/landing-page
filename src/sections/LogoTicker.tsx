@@ -14,14 +14,17 @@ export const LogoTicker = () => {
     <div className="py-8 md:py-12 bg-white">
       <div className="container">
         <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
-          <motion.div className="flex gap-14 flex-none pr-14" animate={{
-            translateX: '-50%'
-          }} transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: 'linear',
-            repeatType: 'loop'
-          }}>
+          <motion.div className="flex gap-14 flex-none pr-14" 
+          // animate={{
+          //   translateX: '-50%'
+          // }} 
+          // transition={{
+          //   duration: 20,
+          //   repeat: Infinity,
+          //   ease: 'linear',
+          //   repeatType: 'reverse'
+          // }}
+          >
             <Image src={AcmeLogo} alt='Acme Logo' className='logo-ticker-image' />
             <Image src={QuantumLogo} alt='Quantum Logo' className='logo-ticker-image' />
             <Image src={EchoLogo} alt='Echo Logo' className='logo-ticker-image' />
