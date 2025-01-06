@@ -8,7 +8,6 @@ import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
 import TestimonalColumn from "@/components/TestimonalColumn";
-import Image from "next/image";
 
 const testimonials = [
   {
@@ -83,10 +82,10 @@ export const Testimonials = () => {
           <p className="section-description mt-5">From intuitive design to powerful features, our app has become an essential tool for users around the world.</p>
         </div>
         
-        <div className="flex justify-center gap-6">
-          <TestimonalColumn column={firstColumn} />
-          <TestimonalColumn column={secondColumn} className="hidden md:flex" />
-          <TestimonalColumn column={thirdColumn} className="hidden lg:flex" />
+        <div className="flex justify-center gap-6 mg-10 [mask-image:linear-gradient(transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">
+          <TestimonalColumn column={firstColumn} duration={15} />
+          <TestimonalColumn column={secondColumn} className="hidden md:block" duration={12} />
+          <TestimonalColumn column={thirdColumn} className="hidden lg:block" />
         </div>
 
       </div>
